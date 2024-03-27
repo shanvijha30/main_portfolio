@@ -1,0 +1,53 @@
+$primary-color: #444;
+$secondary-color:#eece1a;
+
+
+* {
+    box-sizing: border-box;
+}
+body{
+    background: $primary-color;
+    color:white;
+    height:100%;
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height:1.5;
+}
+//headings
+h1, h2, h3{
+    margin:0;
+    font-weight: 400;
+    &.lg-heading{
+        font-size:6 rem;
+    }
+    &.sm-heading{
+        margin-bottom: 2 rem;
+        padding:0.2 rem 1 rem;
+        background: rgba(lighten($primary-color, $amount: 0.5));
+    }
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+header{
+    position:fixed;
+    z-index: 2;
+    width:100%;
+}
+.text-secondary{
+    color: $secondary-color;
+}
+main{
+    padding:4 rem;
+    height:100%;
+    .icon{
+        margin-top: 1 rem;
+        a{
+            padding: 0.4 rem;
+            &:hover{
+                color:$secondary-color;
+            }
+        }
+    }
+}
